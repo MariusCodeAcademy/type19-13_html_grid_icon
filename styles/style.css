@@ -1,0 +1,47 @@
+.grid-container {
+  background-color: gray;
+  border: 1px solid #000;
+  /* ijungiam grid */
+  display: grid;
+  justify-content: space-between;
+  gap: 20px;
+  /* column-gap: 20px; */
+  /* row-gap: 30px; */
+  /* aprasom stulpelius */
+  /* fr - fraction (dalele) */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: auto auto auto;
+  /* eiluciu auksciai */
+  /* grid-template-rows: 50px 150px; */
+}
+
+.grid-item {
+  background-color: coral;
+  border: 1px solid palegreen;
+  font-size: 25px;
+  text-align: center;
+  padding: 15px;
+}
+
+.item1 {
+  grid-row: span 2;
+}
+.item2 {
+  grid-column: span 2;
+}
+
+.item6 {
+  grid-column: span 2;
+}
+
+.hero {
+  margin-top: 50px;
+  background-color: palegoldenrod;
+  min-height: 300px;
+  /* flex center */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  display: grid;
+  place-content: center;
+}
