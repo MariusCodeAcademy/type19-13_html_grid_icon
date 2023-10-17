@@ -1,0 +1,27 @@
+.layout {
+  display: grid;
+  grid-template-columns: 150px auto 25%;
+}
+
+header {
+  background-color: palevioletred;
+  font-size: 25px;
+  grid-column: span 3;
+  padding: 15px;
+}
+
+nav {
+  background-color: paleturquoise;
+}
+main {
+  background-color: palegoldenrod;
+}
+aside {
+  background-color: rgb(234, 156, 100);
+}
+
+footer {
+  background-color: rgb(119, 119, 236);
+  grid-column: span 3;
+  padding: 15px;
+}
