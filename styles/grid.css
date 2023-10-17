@@ -1,6 +1,23 @@
 .layout {
   display: grid;
   grid-template-columns: 150px auto 25%;
+  grid-template-areas:
+    'header header header'
+    'nav . .'
+    '. . .';
+}
+.tablet header {
+  grid-column: span 2;
+}
+.tablet footer {
+  grid-column: span 2;
+}
+.tablet aside {
+  grid-column: span 2;
+}
+
+.layout.tablet {
+  grid-template-columns: 150px auto;
 }
 
 header {
@@ -8,10 +25,12 @@ header {
   font-size: 25px;
   grid-column: span 3;
   padding: 15px;
+  grid-area: header;
 }
 
 nav {
   background-color: paleturquoise;
+  grid-area: nav;
 }
 main {
   background-color: palegoldenrod;
